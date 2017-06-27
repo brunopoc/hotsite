@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.maindiv{
+	width: 600px;
+	margin: 0, auto, 0, auto;
+	text-align: center;
+	
+}
+#mainmenu{
+	position: relative;
+	margin:0;
+	padding:0;
+	height: 50px;
+	background-color : #7f7f7f;
+	color:white;
+}
+#mainmenu ul {
+	display: block;
+	margin: 0px auto;
+}
+
+#mainmenu ul li {
+	list-style: none;
+}
+section{
+	position:relative;
+}
+#mainmenu ul li a {
+	display:block; 
+	float: left; 
+	padding:15px 0px 0px 10px; 
+	text-decoration:none; 
+	color:#FFF;
+}
+div#sidebar{
+	display:block;
+	width: 160px;
+	float: right;
+	padding: 10px;
+}
+
+div#mainsection{
+	display:block;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding-right: 20px;
+	width: 400px;
+	border-right: 1px solid RGBA(0,0,0,0.3);
+}
+
+div#myCarousel {
+	margin: 0;
+	padding: 0;
+	width: 350px;
+	height: 300px;
+	display:block;
+	margin: 10px;
+}
+
+.catchphrase{
+	font-style: italic;
+	float: right;
+}
+.right1{ 
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+.right2{
+	position: absolute;
+	top: 0px;
+	right: 170px;
+}
+
+footer{
+	height:55px;
+	display:block;
+	background-color: #e0e0e0 ;
+	bottom: 0;
+	width: 600px;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 12px;
+	margin: 0, auto, 0, auto;
+}

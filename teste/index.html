@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Estados e Cidades - Exemplo</title>
+    <script language="JavaScript" type="text/javascript" src="cidades-estados-1.4-utf8.js"></script>
+	<script type="text/javascript" src="../_js/sao_paulo.json"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+  </head>
+
+  <body onload="loadJsonData();">
+    <select id="estado" ></select>
+    <select id="cidade" //></select>
+    <script language="JavaScript" type="text/javascript" charset="utf-8">
+      new dgCidadesEstados({
+        cidade: document.getElementById('cidade'),
+        estado: document.getElementById('estado')
+      });
+    </script>
+    <br /> <br />
+  </body>
+</html>
