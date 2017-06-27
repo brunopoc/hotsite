@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 		 <title> Pagína Principal </title>
 		 <link rel="stylesheet" href="_css/style.css">
-		 <link rel="stylesheet" href="_css/bootstrap.min.css">
+		 <link rel="stylesheet" href="_css/bootstrap.css">
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
          <script src="_js/bootstrap.min.js"></script>
 	</head>
@@ -12,7 +12,7 @@
 	<center>
 	<div class="maindiv">
 		<header>
-			<center><img  src= "_img/logo.png" height="130" width="300"/></center>
+			<center><img class = "img-responsive"  src= "_img/logo.png" height="130" width="300"/></center>
 			<nav id="mainmenu">
 				<ul>
 					<li><a href="index.html">HOME</a></li>
@@ -24,58 +24,26 @@
 		</header>
 		<section>
 			
-			<div id="sidebar">
+			<div id="sidebar" class ="row hidden-xs">
 			Feito Por:<br /> <h1>Bruno Cabral</h1>
+			<center><img class = "img-responsive"  src= "_img/photo.jpg" /></center>
 			</div>
-			<div id="mainsection">
-				<center>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					  </ol>
-
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-						<div class="item active">
-						  <img src="_img/slide1.png" alt="">
-						</div>
-
-						<div class="item">
-						  <img src="_img/slide2.png" alt="">
-						</div>
-
-						<div class="item">
-						  <img src="_img/slide3.png" alt="">
-						</div>
-					  </div>
-
-					  <!-- Left and right controls -->
-					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-						<span class="sr-only">Previous</span>
-					  </a>
-					  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-						<span class="sr-only">Next</span>
-					  </a>
-					</div>
-					</center>
-					<p id = "mainp" style = "text-align:justify; text-indent: 25px">
-					
-					Com mais de 50 mil acessos diários e mais 8 milhões de buscas por mês,<wbr />  o portal passou a ser conhecido como <b>“O Canal da MOTO”</b>.<wbr /> 
-					Pensando em oferecer uma experiência ainda mais completa aos motociclistas,<wbr />  foi lançado em 2016 o <em>Shopping MOTO.com.br</em>, uma plataforma online para venda de peças e acessórios diversos que aproxima lojistas e consumidores finais.
-					<br /><span class ="catchphrase">“MOTO.com.br, nós entendemos de MOTO.” </span>
-					</p>
-			</div>
+			<div id="mainsection"> 
+			
+				 <h1>Pagína Principal</h1> <br /> <p id="main" style = "text-align:justify; text-indent: 25px; padding:10px">Acabou servindo como uma página teste para as demais páginas.<br /> <br /> 
+				Aproveitarei o espaço para algumas considerações finais: <br /> 
+				O Primeiro ponto é a respeito do sistema para ler o JSON, eu gastei mais tempo com esse projeto do que posso me orgulhar, mas busquei encontrar uma forma de fazer a leitura sem a necessidade de usar um servidor (isso exclui o AJAX) acabei me vendo obrigado a realizar um ajuste no arquivo JSON e fora isso percebi uma diferença na sintaxe do JavaScript a qual acredito que levarei um tempo a me adaptar. Dentro de todos os scripts deixei uma referência ao caso de estudo / fonte caso exista, também busquei aplicações simples ao bootstrap. <br />
+				A Parte do responsivo não tive muita dificuldade mas acredito que existe vários outros ajustes que ainda poderiam ser feitos, e com o slide usei o próprio bootstrap então não tive nenhuma dificuldade. <br /> O Resumo devo dizer que o meu maior problema foi com a falta de costume com o js. <br /> <br /> Dentro do projeto também tem uma pasta chamada "teste" onde deixei todos os arquivos que busquei na internet para estuda-los.
+				</p>
+			
+			
 			
 			
 		</section>
 		<footer>
 		© Copyright - 2017 | MOTO.com.br | Todos os direitos reservados | All Rights reserved 
 		</footer>
+		</div>
 		</div>
 		</center>
 	</body>

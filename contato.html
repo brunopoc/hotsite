@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 		 <title> Pagína Principal </title>
 		 <link rel="stylesheet" href="_css/style.css">
-		 <link rel="stylesheet" href="_css/bootstrap.min.css">
+		 <link rel="stylesheet" href="_css/bootstrap.css">
 		 <script src="_js/jquery-3.2.1.min.js"></script>
          <script src="_js/bootstrap.min.js"></script>
 		 <script type="text/javascript" src="_js/stateControl.js"></script>
 		 <script type="text/javascript" src="_js/sao_paulo.json"></script>
 		 <script type="text/javascript" src="_js/rio_de_janeiro.json"></script>
 	</head>
-	<body> 
-	<center>
-	<div class="maindiv">
-		<header>
-			<center><img  src= "_img/logo.png" height="130" width="300"/></center>
-			<nav id="mainmenu">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li class = "right1"><a href="quemsomos.html">QUEM SOMOS</a></li>
-					<li class = "right2"><a href="contato.html">CONTATO</a></li>
-				</ul> 
-					
-			</nav>
-		</header>
-		<section>
+	
+	
+			<body> 
+			<center>
+			<div class="maindiv">
+				<header>
+					<center><img class = "img-responsive"  src= "_img/logo.png" height="130" width="300"/></center>
+					<nav id="mainmenu">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li class = "right1"><a href="quemsomos.html">QUEM SOMOS</a></li>
+							<li class = "right2"><a href="contato.html">CONTATO</a></li>
+						</ul> 
+							
+					</nav>
+				</header>
 			
-			<div id="sidebar">
-			Feito Por:<br /> <h1>Bruno Cabral</h1>
-			</div>
-			<div id="mainsection">
-					 <div class="container">
+					<section>
+					<div id="sidebar" class ="row hidden-xs">
+					Feito Por:<br /> <h1>Bruno Cabral</h1>
+					<center><img class = "img-responsive"  src= "_img/photo.jpg" /></center>
+					</div>
+					<div id="mainsection">
+							 <div class="container-fluid">
 
-									<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+								<form class="well form-horizontal" action=" " method="post"  id="contact_form">
 								<fieldset>
 
 								<!-- Form Name -->
@@ -42,8 +45,8 @@
 								<!-- Text input-->
 
 								<div class="form-group">
-								  <label class="col-sm-6 control-label">Primeiro Nome</label>  
-								  <div class="col-sm-6 inputGroupContainer">
+								  <label class="col-xs-6 control-label">Primeiro Nome</label>  
+								  <div class="col-xs-6 inputGroupContainer">
 								  <div class="input-group">
 								  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 								  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
@@ -54,8 +57,8 @@
 								<!-- Text input-->
 
 								<div class="form-group">
-								  <label class="col-sm-6 control-label" >Ultimo Nome</label> 
-									<div class="col-sm-6 inputGroupContainer">
+								  <label class="col-xs-6 control-label" >Ultimo Nome</label> 
+									<div class="col-xs-6 inputGroupContainer">
 									<div class="input-group">
 								  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 								  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
@@ -65,8 +68,8 @@
 
 								<!-- Text input-->
 									   <div class="form-group">
-								  <label class="col-sm-6 control-label">E-Mail</label>  
-									<div class="col-sm-6 inputGroupContainer">
+								  <label class="col-xs-6 control-label">E-Mail</label>  
+									<div class="col-xs-6 inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 								  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
@@ -78,8 +81,8 @@
 								<!-- Text input-->
 									   
 								<div class="form-group">
-								  <label class="col-sm-6 control-label">Telefone</label>  
-									<div class="col-sm-6 inputGroupContainer">
+								  <label class="col-xs-6 control-label">Telefone</label>  
+									<div class="col-xs-6 inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
 								  <input name="phone" placeholder="(11)1111-1111" class="form-control" type="text">
@@ -90,8 +93,8 @@
 								<!-- Text input-->
 									  
 								<div class="form-group">
-								  <label class="col-sm-6 control-label">Endereço</label>  
-									<div class="col-sm-6 inputGroupContainer">
+								  <label class="col-xs-6 control-label">Endereço</label>  
+									<div class="col-xs-6 inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
 								  <input name="address" placeholder="Address" class="form-control" type="text">
@@ -103,8 +106,8 @@
 								 <!-- Select Basic -->
 								   
 								<div class="form-group"> 
-								  <label class="col-sm-6 control-label">Estado</label>
-									<div class="col-sm-6 selectContainer">
+								  <label class="col-xs-6 control-label">Estado</label>
+									<div class="col-xs-6 selectContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
 										 <select id="estado" name="state" class="form-control selectpicker"></select>
@@ -113,8 +116,8 @@
 								</div>
 								
 								<div class="form-group">
-								  <label class="col-sm-6 control-label">Cidade</label>  
-									<div class="col-sm-6 inputGroupContainer">
+								  <label class="col-xs-6 control-label">Cidade</label>  
+									<div class="col-xs-6 inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
 										<select id="cidade" name="state" class="form-control selectpicker"></select>
@@ -144,14 +147,14 @@
 
 								</fieldset>
 								</form>
-								</div>
-									</div><!-- /.container -->
+								</div style ="padding-bottom: -50px;">
+								</div ><!-- /.container -->
 					 
 						<br /> <br />
 					
 					
 					
-			</div>
+			
 			
 		</section>
 		<footer>
